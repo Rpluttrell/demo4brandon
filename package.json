@@ -1,0 +1,14 @@
+{
+  "name": "demo4brandon",
+  "version": "1.0.0",
+  "description": "Demo code for Brandon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reed Luttrell",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
