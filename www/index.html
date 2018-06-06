@@ -49,16 +49,34 @@
 <div class="container">    
   <div class="row content">
     <div class="col-lg-4 col-md-6 col-sm-12">
-      <h1>Section 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>Form</h1>
+      
+      <form id="nameForm" enctype="application/x-www-form-urlencoded">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Please enter your first name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Please enter your last name">
+        </div>
+        
+        <button type="submit" class="btn btn-default" id="submitForm">Submit</button>
+      </form>
+      <div id="nameSuggestion"></div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-12"> 
       <h1>Section 2</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="col-lg-4 col-md-12 col-sm-12">
-      <h1>Section 3</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>Non-form</h1>
+      <div class="form-group">
+        <label for="phoneNumber">Enter a phone number:</label>
+        <input type="phone" class="form-control" id="phoneNumber" placeholder="Please enter your phone number">
+      </div>
+      <button class="btn btn-default" id="submitPhone" onClick="sendPhone()">Send Phone</button>
+      <div id="phoneEcho"></div>
     </div>
   </div>
 </div>
